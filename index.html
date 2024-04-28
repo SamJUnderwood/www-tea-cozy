@@ -10,14 +10,25 @@
     <!-- navigation menu -->
     <header class="header-section">
       <nav class="nav-bar">
-        <img src="resources/imgs/img-tea-cozy-logo.png" alt="Tea Cozy Logo" id="logo" />
-        <ul>
-          <li><a href="#our-mission-container">Mission</a></li>
-          <li><a href="#tea-of-the-month-container">Tea</a></li>
-          <li><a href="#store-locations-container">Locations</a></li>
-        </ul>
+          <img src="resources/imgs/img-tea-cozy-logo.png" alt="Tea Cozy Logo" id="logo">
+          <ul>
+              <li><a href="#our-mission-container">Mission</a></li>
+              <li><a href="#tea-of-the-month-container">Tea</a></li>
+              <li><a href="#store-locations-container">Locations</a></li>
+          </ul>
+          <div class="hamburger-menu">☰</div> <!-- Hamburger Icon -->
       </nav>
-    </header>
+  </header>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.querySelector('.hamburger-menu');
+        const navBar = document.querySelector('.nav-bar');
+        menuIcon.addEventListener('click', function () {
+            navBar.classList.toggle('active');
+        });
+    });
+</script>
 
     <!-- our mission section and background image -->
     <section id="our-mission-container">

@@ -6,6 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   opacity: 0.9;
+  width: 10;
 }
 
 #logo {
@@ -141,3 +142,63 @@ li {
   text-align: left;
   margin: 20px;
 }
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: flex; /* Show on mobile */
+      align-items: center; /* Center alignment if there are any other elements within */
+  }
+
+
+  ul {
+      flex-direction: column;
+      width: 100%; /* Take full width to accommodate longer text */
+  }
+
+  li {
+      width: 100%; /* Full width to prevent overflow */
+      text-align: center; /* Center align the text */
+      margin-right: 0; /* Remove right margin */
+      padding: 10px 0; /* Add padding for touch accessibility */
+  }
+
+  .nav-bar a {
+      padding: 10px; /* Larger area to improve touch interaction */
+  }
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+  display: none; /* Only display this in mobile view */
+  cursor: pointer;
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block; /* Show hamburger icon */
+      margin-left: auto;
+  }
+
+  .nav-bar ul {
+      display: none; /* Hide menu initially */
+      width: 100%; /* Full width */
+      flex-direction: column;
+      position: absolute;
+      background-color: black; /* Match nav-bar background */
+      top: 69px; /* Position below the nav-bar */
+      left: 0;
+      z-index: 1001;
+  }
+
+  #logo {
+    margin-right: auto;
+     /* Ensures the logo stays on the left */
+}
+
+  .nav-bar.active ul {
+      display: flex; /* Show menu when active */
+  }
+}
+
