@@ -69,6 +69,7 @@ li {
   margin-top: 69px;
   justify-content: center;
   display: inline-flex;
+  overflow: hidden;
 }
 
 .text-overlay {
@@ -77,8 +78,8 @@ li {
   align-content: center;
   width: 1200px;
   margin: auto;
+  height: auto;
   padding: 10px 20px;
-  height: 150px;
 }
 
 #tea-of-the-month-container {
