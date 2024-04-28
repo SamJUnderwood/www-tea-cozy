@@ -97,7 +97,7 @@ li {
 }
 
 #store-locations-container {
-  background-image: url('../resources/imgs/img-locations-background.jpg');
+  background-image: url('../imgs/img-locations-background.jpg');
   background-size: cover;
   width: 1200px;
   max-width: 93%;
